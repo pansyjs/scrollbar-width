@@ -1,0 +1,47 @@
+{
+  "name": "@pansy/scrollbar-width",
+  "version": "0.0.0",
+  "description": "获取浏览器滚动条宽度",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
+  "scripts": {
+    "build": "father build",
+    "release": "semantic-release",
+    "format": "prettier --cache --write .",
+    "prepare": "is-ci || husky install"
+  },
+  "sideEffects": false,
+  "files": [
+    "es",
+    "lib"
+  ],
+  "keywords": [
+    "scrollbar",
+    "width",
+    "scrollbar-width"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^17.7.2",
+    "@commitlint/config-conventional": "^17.7.0",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/npm": "^11.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.5",
+    "@typescript-eslint/parser": "^6.7.5",
+    "eslint-config-alloy": "^5.1.2",
+    "father": "^4.3.5",
+    "husky": "^8.0.3",
+    "is-ci": "^3.0.1",
+    "lint-staged": "^14.0.1",
+    "prettier": "^3.0.3",
+    "semantic-release": "^22.0.5",
+    "typescript": "^5.2.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "packageManager": "pnpm@8.0.0"
+}
