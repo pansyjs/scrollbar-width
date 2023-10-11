@@ -8,6 +8,7 @@
   "scripts": {
     "build": "father build",
     "release": "semantic-release",
+    "tsc:check": "tsc --noEmit",
     "format": "prettier --cache --write .",
     "prepare": "is-ci || husky install"
   },
