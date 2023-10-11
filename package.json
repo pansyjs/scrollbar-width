@@ -21,7 +21,9 @@
     "width",
     "scrollbar-width"
   ],
-  "author": "",
+  "authors": [
+    "wangxingkang <wang_xingkang@qq.com> (https://github.com/wangxingkang)"
+  ],
   "license": "MIT",
   "devDependencies": {
     "@commitlint/cli": "^17.7.2",
@@ -42,6 +44,14 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "lint-staged": {
+    "*.{jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
   },
   "packageManager": "pnpm@8.0.0"
 }
